@@ -115,4 +115,42 @@ branch 'master' set up to track 'ori/master'.
 
 dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
 $
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ ls
+practise.txt
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ mkdir clone
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ cd clone
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022/clone (master)
+$ git clone "https://github.com/yousuf777555/10_may_22.git"
+Cloning into '10_may_22'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022/clone (master)
+$ ls -al
+total 4
+drwxr-xr-x 1 dell 197121 0 May 10 11:39 ./
+drwxr-xr-x 1 dell 197121 0 May 10 11:37 ../
+drwxr-xr-x 1 dell 197121 0 May 10 11:39 10_may_22/
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022/clone (master)
+$ ls
+10_may_22/
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022/clone (master)
+$ cd 10_may_22
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022/clone/10_may_22 (master)
+$ ls
+practise.txt
+
+
 
