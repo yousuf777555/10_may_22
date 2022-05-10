@@ -1,1 +1,118 @@
 practise
+
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ ls -al
+total 8
+drwxr-xr-x 1 dell 197121 0 May 10 10:48 ./
+drwxr-xr-x 1 dell 197121 0 May 10 10:48 ../
+drwxr-xr-x 1 dell 197121 0 May 10 10:48 .git/
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ ls
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ vi practise.txt
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        practise.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git config --global user.name "myousuf"
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git config --global user.email "myousuf@gmail.com"
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ cat ~/.gitconfig
+[user]
+        name = myousuf
+        email = myousuf@gmail.com
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git commit -m"practise file"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        practise.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git add practise.txt
+warning: LF will be replaced by CRLF in practise.txt.
+The file will have its original line endings in your working directory
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git commit -m"practise file"
+[master (root-commit) 87f67b4] practise file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 practise.txt
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git log
+commit 87f67b4aaeae40c320fe3000c50c9e015af109ae (HEAD -> master)
+Author: myousuf <myousuf@gmail.com>
+Date:   Tue May 10 11:12:07 2022 +0530
+
+    practise file
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git remote add origin https://github.com/yousuf777555/10_may_22.g
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/yousuf777555/10_may_22.g/' not found
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git remote add origin "https://github.com/yousuf777555/10_may_22.git"
+error: remote origin already exists.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/yousuf777555/10_may_22.g/' not found
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git pull --rebase origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/yousuf777555/10_may_22.g/' not found
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git remote add origin "https://github.com/yousuf777555/10_may_22.git"
+error: remote origin already exists.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git remote add ori https://github.com/yousuf777555/10_may_22.git
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$ git push -u ori master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 221 bytes | 221.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yousuf777555/10_may_22.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'ori/master'.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/10_may_2022 (master)
+$
+
