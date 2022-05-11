@@ -1,0 +1,547 @@
+
+dell@DESKTOP-V8AN3OF MINGW64 ~
+$ cd desktop
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop
+$ ls
+ 10_may_2022/  'Assignments(1)'/                      'Microsoft Edge.lnk'*  'WP
+ 5may2022/     'Declaration CWF Employee-signed.pdf'  'PIC-signed 1.pdf'     'WP
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop
+$ cd git2
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ ls
+a1  a2  a3  a4  add.c  b1  b2  b3  b4  b5  f.1  f.2.c  f.3.c  f4.c  f5.c  f6.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'ori/master'.
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git fetct ori/master
+git: 'fetct' is not a git command. See 'git --help'.
+
+The most similar command is
+        fetch
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git log
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7 (HEAD -> master, ori/master)
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+commit 0d37691e396d250a59ab0c35a246f5eb04da5345 (b2)
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 10:44:06 2022 +0530
+
+    git merge
+
+commit 06e1b1ce62ac6c934e22ecffa3b46b52800bec4d
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:24:48 2022 +0530
+
+    Create s2
+
+commit c95eb3fd804b2a2f1c4d69ceba71e2532431e635
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:20:53 2022 +0530
+
+    Create s1
+
+commit 5552ecc85e5729ea78392317ceb6c26907fa0f29
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:58 2022 +0530
+
+    Create b5
+
+commit 2fd6f161ae50d3f427ce77d8485ed0b837ab657e
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:22 2022 +0530
+
+    Create b4
+
+commit c07c56324360319d07162a43ff69710b7f53158c
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:07:30 2022 +0530
+
+    Create b3
+
+commit 37cd9979e12f34c594981be6dc975cf8bbcd7bc0
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:06:44 2022 +0530
+
+    Create b2
+
+commit 36dc8185882bb78e67828f1120077d5a1ae1131a
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git fetch ori/master
+fatal: 'ori/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git fetch ori master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 659 bytes | 4.00 KiB/s, done.
+From https://github.com/yousuf777555/c-assignment
+ * branch            master     -> FETCH_HEAD
+   917f8b0..b7145d2  master     -> ori/master
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git merge ori master
+merge: ori - not something we can merge
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ cat add.c
+#include<stdio.h>
+
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git merge ori master
+merge: ori - not something we can merge
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git log
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7 (HEAD -> master)
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+commit 0d37691e396d250a59ab0c35a246f5eb04da5345 (b2)
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 10:44:06 2022 +0530
+
+    git merge
+
+commit 06e1b1ce62ac6c934e22ecffa3b46b52800bec4d
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:24:48 2022 +0530
+
+    Create s2
+
+commit c95eb3fd804b2a2f1c4d69ceba71e2532431e635
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:20:53 2022 +0530
+
+    Create s1
+
+commit 5552ecc85e5729ea78392317ceb6c26907fa0f29
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:58 2022 +0530
+
+    Create b5
+
+commit 2fd6f161ae50d3f427ce77d8485ed0b837ab657e
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:22 2022 +0530
+
+    Create b4
+
+commit c07c56324360319d07162a43ff69710b7f53158c
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:07:30 2022 +0530
+
+    Create b3
+
+commit 37cd9979e12f34c594981be6dc975cf8bbcd7bc0
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:06:44 2022 +0530
+
+    Create b2
+
+commit 36dc8185882bb78e67828f1120077d5a1ae1131a
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git fetch ori master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 677 bytes | 4.00 KiB/s, done.
+From https://github.com/yousuf777555/c-assignment
+ * branch            master     -> FETCH_HEAD
+   b7145d2..cce71d4  master     -> ori/master
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ cat add.c
+#include<stdio.h>
+
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git merge ori master
+merge: ori - not something we can merge
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git merge ori/master
+Updating 917f8b0..cce71d4
+Fast-forward
+ add.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git branch
+  b2
+* master
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git checkout b2
+Switched to branch 'b2'
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (b2)
+$ git branch
+* b2
+  master
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (b2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'ori/master'.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git branch -d b2
+Deleted branch b2 (was 0d37691).
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ ls
+a1  a3  add.c  b2  b4  f.1    f.3.c  f5.c  f7.c  s2
+a2  a4  b1     b3  b5  f.2.c  f4.c   f6.c  s1
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ vi add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'ori/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   add.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git add add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git commit -m"new"
+[master 77cfd94] new
+ 1 file changed, 2 insertions(+)
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git log
+commit 77cfd94ce2a016887d91771499d2cb67a9f64ee1 (HEAD -> master)
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:26:22 2022 +0530
+
+    new
+
+commit cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64 (ori/master)
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:13:38 2022 +0530
+
+    Update add.c
+
+commit b7145d2edb3b48fe5e93f36faf5af27b707c07f8
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:07:39 2022 +0530
+
+    Update add.c
+
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git reset --mixed HEAD~1
+Unstaged changes after reset:
+M       add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'ori/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   add.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ ls
+a1  a3  add.c  b2  b4  f.1    f.3.c  f5.c  f7.c  s2
+a2  a4  b1     b3  b5  f.2.c  f4.c   f6.c  s1
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ vi add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git add add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git commit -m "new1"
+[master 4b1adcd] new1
+ 1 file changed, 4 insertions(+)
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git reset --soft HEAD~1
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'ori/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   add.c
+
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ vi add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git add add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git commit -m"hard"
+[master 124724f] hard
+ 1 file changed, 6 insertions(+)
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git log
+commit 124724f24c501377a3bc06ba33d1b6492b7fb1e8 (HEAD -> master)
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:41:34 2022 +0530
+
+    hard
+
+commit cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64 (ori/master)
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:13:38 2022 +0530
+
+    Update add.c
+
+commit b7145d2edb3b48fe5e93f36faf5af27b707c07f8
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:07:39 2022 +0530
+
+    Update add.c
+
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git reset --hard HEAD~1
+HEAD is now at cce71d4 Update add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git log
+commit cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64 (HEAD -> master, ori/master)
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:13:38 2022 +0530
+
+    Update add.c
+
+commit b7145d2edb3b48fe5e93f36faf5af27b707c07f8
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:07:39 2022 +0530
+
+    Update add.c
+
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+commit 0d37691e396d250a59ab0c35a246f5eb04da5345
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 10:44:06 2022 +0530
+
+    git merge
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ ls
+a1  a3  add.c  b2  b4  f.1    f.3.c  f5.c  f7.c  s2
+a2  a4  b1     b3  b5  f.2.c  f4.c   f6.c  s1
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ vi add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git add add.c
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git commit-m"new command"
+git: 'commit-mnew command' is not a git command. See 'git --help'.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git remote add ori https://github.com/yousuf777555/c-assignment.git
+error: remote ori already exists.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git remote add orn https://github.com/yousuf777555/c-assignment.git
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git push -u orn master
+Everything up-to-date
+branch 'master' set up to track 'orn/master'.
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+$ git log
+commit cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64 (HEAD -> master, orn/master, ori/master)
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:13:38 2022 +0530
+
+    Update add.c
+
+commit b7145d2edb3b48fe5e93f36faf5af27b707c07f8
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:07:39 2022 +0530
+
+    Update add.c
+
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+commit 0d37691e396d250a59ab0c35a246f5eb04da5345
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 10:44:06 2022 +0530
+
+:...skipping...
+commit cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64 (HEAD -> master, orn/master, ori
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:13:38 2022 +0530
+
+    Update add.c
+
+commit b7145d2edb3b48fe5e93f36faf5af27b707c07f8
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:07:39 2022 +0530
+
+    Update add.c
+
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+commit 0d37691e396d250a59ab0c35a246f5eb04da5345
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 10:44:06 2022 +0530
+
+    git merge
+
+commit 06e1b1ce62ac6c934e22ecffa3b46b52800bec4d
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:24:48 2022 +0530
+
+    Create s2
+
+commit c95eb3fd804b2a2f1c4d69ceba71e2532431e635
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:20:53 2022 +0530
+
+    Create s1
+
+commit 5552ecc85e5729ea78392317ceb6c26907fa0f29
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:58 2022 +0530
+
+    Create b5
+
+commit 2fd6f161ae50d3f427ce77d8485ed0b837ab657e
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:22 2022 +0530
+
+    Create b4
+
+commit c07c56324360319d07162a43ff69710b7f53158c
+:
+commit cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64 (HEAD -> master, orn/master, ori
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:13:38 2022 +0530
+
+    Update add.c
+
+commit b7145d2edb3b48fe5e93f36faf5af27b707c07f8
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Wed May 11 11:07:39 2022 +0530
+
+    Update add.c
+
+commit 917f8b099be3f386b48a31ac9142cd7aea7332e7
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 11:01:38 2022 +0530
+
+    fectch
+
+commit 0d37691e396d250a59ab0c35a246f5eb04da5345
+Author: myousuf <myousuf@gmail.com>
+Date:   Wed May 11 10:44:06 2022 +0530
+
+    git merge
+
+commit 06e1b1ce62ac6c934e22ecffa3b46b52800bec4d
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:24:48 2022 +0530
+
+    Create s2
+
+commit c95eb3fd804b2a2f1c4d69ceba71e2532431e635
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:20:53 2022 +0530
+
+    Create s1
+
+commit 5552ecc85e5729ea78392317ceb6c26907fa0f29
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:58 2022 +0530
+
+    Create b5
+
+commit 2fd6f161ae50d3f427ce77d8485ed0b837ab657e
+Author: yousuf777555 <98573971+yousuf777555@users.noreply.github.com>
+Date:   Fri Feb 4 15:08:22 2022 +0530
+
+    Create b4
+
+commit c07c56324360319d07162a43ff69710b7f53158c
+:
+
+dell@DESKTOP-V8AN3OF MINGW64 ~/desktop/git2 (master)
+git revert  c cce71d4d2a3e9cdb6774dfeadd5a36f74046ac64
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
